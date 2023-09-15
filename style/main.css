@@ -9,6 +9,14 @@
     /* padding: 0 100px; */
 }
 
+.ani {
+    animation-fill-mode: forwards;
+}
+
+.op-0 {
+    opacity: 0;
+}
+
 .img-max {
     max-width: 100%;
 }
@@ -114,6 +122,7 @@ section {
     font-size: 60px;
     font-weight: 800;
     color: #1A94AE;
+    opacity: 0;
 }
 
 .section-3-decs {
@@ -129,6 +138,7 @@ section {
 
 .map {
     position: relative;
+    opacity: 0;
 }
 
 .stick {
@@ -136,6 +146,7 @@ section {
     width: 16%;
     top: 35%;
     left: 44%;
+    opacity: 0;
 }
 
 .stick img {
