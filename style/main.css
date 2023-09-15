@@ -148,6 +148,52 @@ section {
     left: 0;
     bottom: 0;
     width: 30%;
+    height: 50%;
     padding: 30px;
     background-image: linear-gradient(135deg, #ddd4c5 0%, #E9D1A5 48%, #ddd4c5 100%);
+}
+
+.section-3-infor-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: #1A94AE;
+}
+
+.section-3-infor-arrow img {
+    width: 40px;
+}
+
+.section-3-infor-arrow-right {
+    padding-left: 8px;
+}
+
+.section-3-infor-wrapper {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+.section-3-infor-number {
+    font-size: 350px;
+    line-height: 230px;
+    color: #1A94AE;
+}
+
+.section-3-infor-content {
+    color: #1A94AE;
+}
+
+.section-4-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-4-banner img {
+    width: 80%;
 }
