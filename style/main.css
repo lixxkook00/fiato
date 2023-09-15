@@ -454,6 +454,15 @@ section {
     max-width: 150px;
 }
 
+.footer-banner {
+    display: flex;
+}
+
+.footer {
+    background: url("../assets/images/footer-bg.png") no-repeat center center;
+    background-position: top center;
+}
+
 .footer-form {
     width: 50%;
     transform: translateY(-25%);
@@ -487,7 +496,70 @@ section {
     /* transform: translateY(100%); */
 }
 
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    padding: 20px;
+}
+
+.member-title {
+    text-align: center;
+}
+
+.member-logo {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.invest-item {
+    padding-right: 20px;
+    width: 100px;
+}
+
+.invest-title {
+    padding-bottom: 20px;
+}
+
+.invest-list {
+    margin-bottom: 30px;
+}
+
+.invest-item-height {
+    height: 50px;
+    width: auto;
+}
+
+.footer-line {
+    height: 2px;
+    width: 300px;
+    background-color: #ddd;
+    margin: 25px 0;
+}
+
+.footer-decs {
+    background-color: #17859D;
+    padding: 10px 0;
+    color: #fff;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.infor {
+    color: #16859D;
+    padding-bottom: 60px;
+}
+
+.infor-name {
+    color: #30B5BE;
+    font-size: 32px;
+}
+
+.infor-desc {
+    margin-top: 5px;
+}
 
 
 
