@@ -197,3 +197,316 @@ section {
 .section-4-banner img {
     width: 80%;
 }
+
+.section-4-title {
+    color: #1A94AE;
+    padding-left: 40px;
+}
+
+.section-4-title h2 {
+    font-size: 80px;
+    line-height: 64px;
+}
+
+.section-4-title span {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.section-4-content {
+    margin: 30px 0;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+.section-4-card img{
+    width: 100%;
+}
+
+.section-4-card {
+    transition: all 0.2s linear;
+    transform: scale(0.9);
+}
+
+.section-4 .swiper-slide {
+    transition: all 0.2s linear;
+}
+
+/* .swiper-slide-duplicate-prev {
+    transform: translateX(0%) !important;
+} */
+
+.section-4 .swiper-slide-duplicate-prev{
+    transform: scale(1.4) translateY(13%) !important;
+}
+
+.section-4 .swiper-slide-duplicate-active,
+.section-4 .swiper-slide-active {
+    transform: translateX(12%) !important;
+}
+
+.section-4 .swiper-slide-next {
+    transform: translateX(-7%) !important;
+}
+
+.section-4 .swiper-slide {
+    transform: translateX(-12%);
+}
+
+.section-4 .swiper-slide.swiper-slide-active,
+.section-4 .swiper-slide.swiper-slide-duplicate.swiper-slide-active {
+    transform: translateX(0%) !important;
+}
+
+.section-5 {
+    padding: 250px 0 150px;
+}
+
+.section-5-swiper {
+    height: 100%;
+}
+
+.section-5-city {
+    position: relative;
+}
+
+.section-5-building {
+    width: 70%;
+    position: absolute;
+    left: 12%;
+    bottom: 70%;
+}
+
+.section-5-map {
+    width: 70%;
+    position: absolute;
+    left: 12%;
+    bottom: -33%;
+}
+
+.section-5-city img {
+    width: 100%;
+}
+
+.section-5-carousel {
+    position: relative;
+}
+
+.section-5-card {
+    background-color: #F6E2C0;
+    height: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-5-card-decs {
+    text-align: right;
+    font-size: 22px;
+    color: #16859D;
+}
+
+.section-5-sub,
+.section-5-title {
+    font-size: 50px;
+    color: #fff;
+    text-align: right;
+}
+
+.section-5-title {
+    font-size: 90px;
+}
+
+.section-5-swiper .swiper-pagination {
+    width: 20%;
+    left: 82%;
+    color: #16859D;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    z-index: 1000000;
+}
+
+.section-5-floor {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.section-6 {
+    padding: 20px 0;
+}
+
+.section-6-title {
+    font-size: 100px;
+    color: #16859D;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #16859D;
+    margin: 25px 0;
+}
+
+.news {
+    color: #16859D;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.news-plus {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.news-date {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.news-content {
+    height: 60px;
+    position: relative;
+    font-weight: 400;
+}
+
+.news-content-text {
+    transition: all 0.3s ease;
+}
+
+.news:hover .news-plus {
+    color: #F6E3C0;
+}
+
+.news-img {
+    position: relative;
+}
+
+.news-img-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 40px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.news:hover .news-img-over{
+    height: 0%;
+}
+
+.swiper-6-pagination {
+    display: flex;
+    justify-content: center;
+    color: #16859D;
+    transform: translateY(100%);
+}
+
+.section-6 .arrow {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    z-index: 1000000;
+    transform: translate(-50%, -60%);
+}
+
+.section-7 {
+    padding: 50px 0 100px;
+}
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-7-wrapper {
+    width: 50%;
+    position: relative;
+}
+
+.section-7-title {
+    width: 39%;
+    position: absolute;
+    top: 6%;
+    left: -16%;
+    z-index: 1000;
+}
+
+.section-7-next {
+    width: 20%;
+    position: absolute;
+    top: 90%;
+    left: 72%;
+    z-index: 1000;
+}
+
+.footer-form {
+    width: 50%;
+}
+
+.footer-form-button {
+    background-color: #31B5BE;
+    padding: 55px;
+}
+
+.footer .arrow {
+    position: absolute;
+    bottom: -13%;
+    left: 70%;
+    z-index: 1000000;
+    transform: translate(-50%, -60%);
+}
+
+.footer-form-img {
+    position: relative;
+}
+
+.swiper-8-pagination {
+    position: absolute;
+    bottom: -7%;
+    display: flex;
+    justify-content: end;
+    color: #16859D;
+    left: -1%;
+    z-index: 1000;
+    /* transform: translateY(100%); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

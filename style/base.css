@@ -134,6 +134,10 @@ table {
     gap: 10px;
 }
 
+.grid.gap-0 {
+    gap: 0;
+}
+
 .grid-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -160,6 +164,10 @@ table {
 
 .grid-1-2 {
     grid-template-columns: 33% 66%;
+}
+
+.grid-2-1 {
+    grid-template-columns: 66% 33%;
 }
 
 .grid-3-2 {
