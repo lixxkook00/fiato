@@ -324,10 +324,36 @@ section {
 }
 
 .section-5-building {
-    width: 70%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.section-5-building--1 {
+    width: 30%;
     position: absolute;
     left: 12%;
     bottom: 70%;
+}
+
+.section-5-building--2 {
+    width: 20%;
+    position: absolute;
+    left: 51%;
+    bottom: 79%;
+}
+
+.section-5-building--3 {
+    width: 22%;
+    position: absolute;
+    left: 60%;
+    bottom: 76.5%;
+}
+
+.section-5-building--4 {
+    width: 23.4%;
+    position: absolute;
+    left: 37.9%;
+    bottom: 73.4%;
 }
 
 .section-5-map {
@@ -535,7 +561,7 @@ section {
     transition: all 0.5s ease;
 }
 
-.footer-form-button:hover img{
+.footer-form-button:hover img {
     transform: scale(1.1);
 }
 
