@@ -29,9 +29,9 @@ const activeBG = (percent) => {
 const handleScrollingSection_1 = () => {
     const Tween = new TimelineMax()
         .to(
-            ".section-1-overlay h1", 0.2, { 
+            ".section-1-overlay h1", 0.4, { 
                 opacity: 0, 
-                xPercent: 280,
+                xPercent: 180,
                 display: 'none'
             },
             '0'
