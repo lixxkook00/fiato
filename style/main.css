@@ -66,11 +66,22 @@ section {
 
 }
 
-.section-1-text:not(:first-child) {
-    margin-top: 140px;
+.section-1-bg img {
+    transition: all 0.5s linear;
+    transform: translate(-50%, -50%) scale(1.02);
+    height: 100vh;
 }
 
+.section-1-bg img:not(:first-child) {
+    opacity: 0;
+}
+
+/* .section-1-text:not(:first-child) {
+    margin-top: 140px;
+} */
+
 .section-1-text {
+    margin: 120px 0;
     padding-left: 60vw;
     background-image: linear-gradient(135deg, #E9D0A6 0%, #FDF2DF 48%, #E9D0A6 100%);
     -webkit-background-clip: text;
