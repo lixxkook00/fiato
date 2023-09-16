@@ -81,7 +81,7 @@ section {
 } */
 
 .section-1-text {
-    margin: 120px 0;
+    margin: 140px 0;
     padding-left: 60vw;
     background-image: linear-gradient(135deg, #E9D0A6 0%, #FDF2DF 48%, #E9D0A6 100%);
     -webkit-background-clip: text;
@@ -90,13 +90,15 @@ section {
 
 
 .section-1-text span {
-    font-size: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .section-1-text h2 {
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .section-2 {
@@ -113,11 +115,21 @@ section {
 
 }
 
+.section-2-text-bg {
+    opacity: 0.2;
+}
+
+.section-2-text,
 .section-2-title {
+    opacity: 0;
     position: absolute;
     left: 50%;
     top: 5%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 50%);
+}
+
+.section-2-text {
+    transform: translate(-50%, 50);
 }
 
 .section-3 {

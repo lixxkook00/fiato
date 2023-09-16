@@ -6,9 +6,9 @@ const controller = new ScrollMagic.Controller();
 const activeBG = (percent) => {
     let iEl = 0;
 
-    if(percent > 0 && percent < 23) {
+    if(percent > 0 && percent < 26) {
         iEl = 0;
-    }else if(percent > 23 && percent < 44){
+    }else if(percent > 26 && percent < 44){
         iEl = 1;
     }else if(percent >= 44 && percent < 60) {
         iEl = 2;
@@ -26,67 +26,102 @@ const activeBG = (percent) => {
     })
 }
 
-const scene_1_Overlay_Tween = new TimelineMax()
-    .to(
-        ".section-1-overlay h1", 0.2, { 
-            opacity: 0, 
-            xPercent: 280,
-            display: 'none'
-        },
-        '0'
-    )
-    .to(
-        ".zoom-frame", 2, { 
-            scale: 50, 
-            xPercent: 3, 
-            yPercent: 125, 
-            display: 'none'
-        },
-        '0'
-    )
-    .to(
-        ".section-1-square", 0.01, { 
-            opacity: 0,
-            display: 'none'
-        },
-        '0'
-    )
-    .to(
-        ".section-wrapper", 3, { 
-            yPercent: -150,
-            onUpdateParams:["{self}"],
-            onUpdate:function(tl){
-                // tl references {self} which is the timeline
-                var tlp = tl.progress() * 100 >> 0;
-                // $("#progress").html(tlp+"%");
-                console.log(tlp)
-                activeBG(tlp)
-            }       
-        },
-        '1'
-    )
+const handleScrollingSection_1 = () => {
+    const Tween = new TimelineMax()
+        .to(
+            ".section-1-overlay h1", 0.2, { 
+                opacity: 0, 
+                xPercent: 280,
+                display: 'none'
+            },
+            '0'
+        )
+        .to(
+            ".zoom-frame", 2, { 
+                scale: 50, 
+                xPercent: 3, 
+                yPercent: 125, 
+                display: 'none'
+            },
+            '0'
+        )
+        .to(
+            ".section-1-square", 0.05, { 
+                opacity: 0,
+                display: 'none'
+            },
+            '0'
+        )
+        .to(
+            ".section-wrapper", 3, { 
+                yPercent: -130,
+                onUpdateParams:["{self}"],
+                onUpdate:function(tl){
+                    // tl references {self} which is the timeline
+                    var tlp = tl.progress() * 100 >> 0;
+                    // $("#progress").html(tlp+"%");
+                    console.log(tlp)
+                    activeBG(tlp)
+                }       
+            },
+            '1'
+        )
 
-const scene_1_Overlay = new ScrollMagic.Scene(
-        {
-            triggerElement: "#section-1", 
-            duration: 1000,
-            triggerHook: 0
-        }
-    )
-    .setPin(".section-1")
-    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-    .addTo(controller)
-    .setTween(scene_1_Overlay_Tween);
+    new ScrollMagic.Scene(
+            {
+                triggerElement: "#section-1", 
+                duration: 1000,
+                triggerHook: 0
+            }
+        )
+        .setPin(".section-1")
+        .addTo(controller)
+        .setTween(Tween);
+}
 
+const handleScrollingSection_2 = () => {
+    const Tween = new TimelineMax()
+        .to(
+            ".section-2-text-bg", 0.4, { 
+                yPercent: -5,
+                opacity: 1, 
+            },
+            '0'
+        )
+        .to(
+            ".section-2-title", 0.4, { 
+                opacity: 1, 
+                yPercent: -50,
+            },
+            '0'
+        )
+        .to(
+            ".section-2-title", 0.4, { 
+                yPercent: -100,
+                opacity: 0, 
+                display: 'none'
+            },
+            '1'
+        )
+        .to(
+            ".section-2-text", 0.8, { 
+                yPercent: -50,
+                opacity: 1,
+            },
+            '1'
+        )
 
-// const scene_1_Text = new ScrollMagic.Scene(
-//         {
-//             triggerElement: ".section-wrapper", 
-//             duration: 1000,
-//             triggerHook: 0
-//         }
-//     )
-//     .setPin(".section-1")
-//     // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-//     .addTo(controller)
-//     // .setTween(scene_1_Overlay_Tween);
+    new ScrollMagic.Scene(
+            {
+                triggerElement: "#section-2", 
+                duration: 2000,
+                triggerHook: 0
+            }
+        )
+        .setPin(".section-2")
+        .addTo(controller)
+        .setTween(Tween);
+}
+
+handleScrollingSection_1();
+handleScrollingSection_2();
