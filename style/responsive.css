@@ -3,6 +3,11 @@
     .hide-on-pc {
         display: none !important;
     }
+
+    .section-2-text-top {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }
 
 
@@ -131,6 +136,7 @@
 
     .section-5 {
         padding: 100px 0 70px;
+        min-height: 70vh;
     }
 
     .section-5-floor {
@@ -200,6 +206,23 @@
     .menu {
         height: 14px;
         margin-right: 20px;
+    }
+
+    .section-2-text-bg {
+        width: 80vw;
+    }
+
+    .section-2-text,
+    .section-2-title {
+        width: 70%;
+    }
+
+    .section-4 .swiper-slide-active .section-4-card {
+        height: 300px;
+    }
+
+    .section-4-carousel {
+        padding: 10px;
     }
 }
 

@@ -25,10 +25,13 @@ var swiper4 = new Swiper(".section-4-swiper", {
     // Set the index of the active slide to 1
     activeIndex: 1,
     slideWidth: 200,
-    // centeredSlides: true,
-    spaceBetween: 30,
+    centeredSlides: true,
+    spaceBetween: 10,
     // auto
-    autoplay: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     slideActiveClass: 'swiper-slide-active',
     slideClass: 'swiper-slide',
     // loopAdditionalSlides: 1,
@@ -40,16 +43,10 @@ var swiper4 = new Swiper(".section-4-swiper", {
         },
         768: {
             slidesPerView: 5,
-            spaceBetween: 0
+            spaceBetween: 10
         }
     },
     loop: true,
-    loopedSlides: 50,
-    on: {
-        // slideChange: function () {
-        //     resizeThePromotionSwiper()
-        // },
-    },
 });
 
 var swiper6 = new Swiper(".section-6-swiper", {

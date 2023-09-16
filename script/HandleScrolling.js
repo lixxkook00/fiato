@@ -46,7 +46,7 @@ const handleScrollingSection_1 = () => {
         )
         .to(
             ".zoom-frame", 2, { 
-                scale: 50, 
+                scale: 55, 
                 xPercent: 3, 
                 yPercent: 125, 
                 display: 'none'
@@ -96,7 +96,7 @@ const handleScrollingSection_2 = () => {
         .to(
             ".section-2-title", 0.4, { 
                 opacity: 1, 
-                yPercent: -50,
+                yPercent: -55,
             },
             '0'
         )
@@ -110,7 +110,7 @@ const handleScrollingSection_2 = () => {
         )
         .to(
             ".section-2-text", 0.8, { 
-                yPercent: -50,
+                yPercent: -55,
                 opacity: 1,
             },
             '1'
