@@ -1,54 +1,106 @@
-var wh = window.innerHeight;
+const wh = window.innerHeight;
 
 // init
-var controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-        triggerHook: 'onLeave'
-    }
-});
+const controller = new ScrollMagic.Controller();
+
+const scene_1_Overlay_Tween = new TimelineMax()
+    .to(
+        ".section-1-overlay h1", 0.2, { 
+            opacity: 0, 
+            xPercent: 220,
+            display: 'none'
+        },
+        '0'
+    )
+    .to(
+        ".zoom-frame", 1, { 
+            scale: 40, 
+            xPercent: 3, 
+            yPercent: 100, 
+            display: 'none'
+        },
+        '0'
+    )
+    .to(
+        ".section-1-square", 0.01, { 
+            opacity: 0,
+            display: 'none'
+        },
+        '0'
+    )
+
+const scene_1_Overlay = new ScrollMagic.Scene(
+        {
+            triggerElement: "#section-1", 
+            duration: 1000,
+            triggerHook: 0
+        }
+    )
+    .setPin(".section-1")
+    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+    .addTo(controller)
+    .setTween(scene_1_Overlay_Tween);
+    // .setTween(
+    //     ".zoom-frame", { 
+    //         scale: 40, 
+    //         xPercent: 3, 
+    //         yPercent: 100, 
+    //         display: 'none'
+    //     }
+    // )
+    // .setTween(
+    //     ".section-1-overlay h1", { 
+    //         opacity: 0, 
+    //         xPercent: 3, 
+    //         yPercent: 100, 
+    //         display: 'none'
+    //     }
+    // );
+
+
 
 // Create scene
-$("section").each(function(section) {
-    new ScrollMagic.Scene({
-            triggerElement: this,
-            duration: '40%'
-        })
-        .setPin(this)
-        .addTo(controller);
+// $("section").each(function(section) {
+//     new ScrollMagic.Scene({
+//             triggerElement: this,
+//             duration: '40%'
+//         })
+//         .setPin(this)
+//         .addTo(controller);
 
-});
+// });
 
 
 // ----------------------------------------------------------------
 
 // SCREEN 1
-var iphoneIntroTl = new TimelineMax();
-iphoneIntroTl
-    // .from($('.screen-1-wrapper'), 0.01, {
-    //     yPercent: -10,
-    //     xPercent: -1,
-    //     scale: 0.9,
-    //     ease: Power4.easeInOut
-    // })
-    .to(
-        $('.zoom-frame'), 0.1, {
-            // opacity: 0,
-            yPercent: 140,
-            xPercent: 3,
-            display: 'none',
-            scale: 50
-        },
-        '0'
-    ).to(
-        $('.innerS1 h1'), 0.035, {
-            opacity: 0,
-            yPercent: 20,
-            xPercent: 250,
-            display: 'none',
-            scale: 0.98
-        },
-        '0'
-    )
+// var iphoneIntroTl = new TimelineMax();
+// iphoneIntroTl
+//     // .from($('.screen-1-wrapper'), 0.01, {
+//     //     yPercent: -10,
+//     //     xPercent: -1,
+//     //     scale: 0.9,
+//     //     ease: Power4.easeInOut
+//     // })
+//     .to(
+//         $('.zoom-frame'), 0.1, {
+//             // opacity: 0,
+//             yPercent: 140,
+//             xPercent: 3,
+//             display: 'none',
+//             scale: 50
+//         },
+//         '0'
+//     ).to(
+//         $('.innerS1 h1'), 0.035, {
+//             opacity: 0,
+//             yPercent: 20,
+//             xPercent: 250,
+//             display: 'none',
+//             scale: 0.98
+//         },
+//         '0'
+//     )
     // .to(
     //     $('.screen-1-wrapper'), 0.1, {
     //         scale: 1,
@@ -59,12 +111,12 @@ iphoneIntroTl
     // );
 
     // iPhone back to stylesheet position
-    new ScrollMagic.Scene({
-            duration: '70%'
-        })
-        .setTween(iphoneIntroTl)
-        .triggerElement($('body')[0])
-        .addTo(controller);
+    // new ScrollMagic.Scene({
+    //         duration: '70%'
+    //     })
+    //     .setTween(iphoneIntroTl)
+    //     .triggerElement($('body')[0])
+    //     .addTo(controller);
 
 
 // ----------------------------------------------------------------
