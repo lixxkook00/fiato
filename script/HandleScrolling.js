@@ -42,14 +42,14 @@ const scene_1_Overlay = new ScrollMagic.Scene(
     .setTween(scene_1_Overlay_Tween);
 
 
-const scene_1_Text = new ScrollMagic.Scene(
-        {
-            triggerElement: ".section-wrapper", 
-            duration: 1000,
-            triggerHook: 0
-        }
-    )
-    .setPin(".section-1")
-    // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-    .addTo(controller)
-    // .setTween(scene_1_Overlay_Tween);
+// const scene_1_Text = new ScrollMagic.Scene(
+//         {
+//             triggerElement: ".section-wrapper", 
+//             duration: 1000,
+//             triggerHook: 0
+//         }
+//     )
+//     .setPin(".section-1")
+//     // .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+//     .addTo(controller)
+//     // .setTween(scene_1_Overlay_Tween);
