@@ -133,9 +133,10 @@ section {
 }
 
 .section-3 {
-    min-height: 50vh;
+    min-height: 100vh;
     background: url("../assets/images/section_3_bg.png") no-repeat center center;
-    background-position: center center;
+    background-position: top center;
+    background-size: auto 100%;
 }
 
 .section-3-content {
@@ -184,9 +185,13 @@ section {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 30%;
-    height: 50%;
+    width: 35%;
+    height: 40%;
     padding: 30px;
+
+    opacity: 0;
+    transform: translateY(100%);
+
     background-image: linear-gradient(135deg, #ddd4c5 0%, #E9D1A5 48%, #ddd4c5 100%);
 }
 

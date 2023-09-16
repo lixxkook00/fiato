@@ -123,5 +123,28 @@ const handleScrollingSection_2 = () => {
         .setTween(Tween);
 }
 
+const handleScrollingSection_3 = () => {
+    const Tween = new TimelineMax()
+        .to(
+            ".section-3-infor", 0.4, { 
+                yPercent: -100,
+                opacity: 1, 
+            },
+            '0'
+        )
+
+    new ScrollMagic.Scene(
+            {
+                triggerElement: "#section-3", 
+                duration: 1000,
+                triggerHook: 0,
+            }
+        )
+        .setPin(".section-3")
+        .addTo(controller)
+        .setTween(Tween);
+}
+
 handleScrollingSection_1();
 handleScrollingSection_2();
+handleScrollingSection_3();
