@@ -95,6 +95,11 @@ var swiper8 = new Swiper(".section-8-swiper", {
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 10,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
     pagination: {
         el: ".swiper-8-pagination",
         type: "fraction",
