@@ -57,10 +57,7 @@ const handleScrollingSection_1 = () => {
                 yPercent: -130,
                 onUpdateParams:["{self}"],
                 onUpdate:function(tl){
-                    // tl references {self} which is the timeline
                     var tlp = tl.progress() * 100 >> 0;
-                    // $("#progress").html(tlp+"%");
-                    console.log(tlp)
                     activeBG(tlp)
                 }       
             },

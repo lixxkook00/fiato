@@ -528,6 +528,15 @@ section {
 .footer-form-button {
     background-color: #31B5BE;
     padding: 55px;
+    cursor: pointer;
+}
+
+.footer-form-button img {
+    transition: all 0.5s ease;
+}
+
+.footer-form-button:hover img{
+    transform: scale(1.1);
 }
 
 .footer .arrow {
@@ -669,4 +678,74 @@ section {
 
 .section-1 {
     position: relative;
+}
+
+
+
+/* FORM */
+.contactForm-wrapper {
+    background-color: #FFF0D6;
+    color: #15859C;
+    padding: 20px;
+    font-family: 'SVN-Gotham XLight';
+}
+
+.contact-form-input input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-bottom: 5px;
+    background-color: #FFF0D6;
+    color: #15859C;
+}
+
+.contact-form-input input::placeholder {
+    color: #15859C;
+    font-weight: 800;
+}
+
+.contact-form-input {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #15859C;
+}
+
+.contactForm-button {
+    height: 60px;
+    width: 60px;
+    background-color: #15859C;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.contactForm-button:hover {
+    transform: scale(1.1);
+}
+
+.contactForm-name {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 60px;
+}
+
+.contactForm-wrapper {
+    /* z-index: 999999999999999999; */
+}
+
+.contactForm-close {
+    position: absolute;
+    right: 1.5%;
+    top: 1.5%;
+    color: #15859C;
+    font-size: 30px;
+    transition: all 0.5s linear;
+}
+
+.contactForm-close:hover {
+    cursor: pointer;
+    color: #ddd;
 }
