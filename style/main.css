@@ -793,3 +793,29 @@ section {
     cursor: pointer;
     color: #ddd;
 }
+
+.offcanvas-start {
+    width: 100vw;
+    max-width: 370px;
+    z-index: 89080898989898989;
+    background-color: #FFF0D6;
+    color: #15859C;
+}
+
+.offcanvas-title {
+    font-size: 30px;
+    font-family: 'SVN-Gotham XLight';
+}
+
+.nav-item {
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #15869c47;
+
+    display: flex;
+    color: #15859C;
+}
+
+.offcanvas-body {
+    padding: 0 20px;
+}

@@ -21,7 +21,8 @@
     <meta property="og:title" content="FIATO" />
     <!-- <meta property="og:image" content="./assets/images/logo-large.png"> -->
     <meta property="og:description" content="FIATO">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/fontawesome-6.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="./style/all.min.css"> -->
@@ -41,7 +42,7 @@
             <img src="./assets/images/logo.png" alt="">
         </div>
 
-        <div class="menu">
+        <div class="menu d-flex" data-bs-toggle="offcanvas" href="#menuNav" role="button" aria-controls="menuNav">
             <img src="./assets/images/menu.png" alt="">
         </div>
     </header>
@@ -777,6 +778,39 @@
                         <img class="img-max" src="./assets/images/form-banner.png" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION NAV -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuNav" aria-labelledby="menuNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuNavLabel">MENU</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="nav-list">
+                <a href="#section-1" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 1
+                </a>
+                <a href="#section-2" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 2
+                </a>
+                <a href="#section-3" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 3
+                </a>
+                <a href="#section-4" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 4
+                </a>
+                <a href="#section-5" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 5
+                </a>
+                <a href="#section-6" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 6
+                </a>
+                <a href="#section-7" class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                    SECTION 7
+                </a>
             </div>
         </div>
     </div>

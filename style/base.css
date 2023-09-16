@@ -491,3 +491,8 @@ body.isLoading {
     font-style: normal;
     font-display: swap;
 }
+
+a:hover {
+    color: unset;
+    text-decoration: none;
+}

@@ -7,6 +7,18 @@ window.addEventListener('load', (event) => {
     bind1('body').classList.remove('isLoading')
 });
 
+// Handle nav
+// const toggleNavMobile = () => {
+//     bind1('.soft-menu').classList.toggle('open')
+//     bind1('.soft-menu__list').classList.toggle('open')
+// }
+
+// bind2('.soft-menu__item').forEach((element) => {
+//   element.onclick = () => {
+//     toggleNavMobile()
+//   }
+// })
+
 // SWIPER
 var swiper4 = new Swiper(".section-4-swiper", {
     // slidesPerView: 1,
