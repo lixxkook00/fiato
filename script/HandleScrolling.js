@@ -28,6 +28,12 @@ const scene_1_Overlay_Tween = new TimelineMax()
         },
         '0'
     )
+    .to(
+        ".section-wrapper", 3, { 
+            yPercent: -150,
+        },
+        '1'
+    )
 
 const scene_1_Overlay = new ScrollMagic.Scene(
         {

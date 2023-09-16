@@ -66,14 +66,17 @@ section {
 
 }
 
-.section-1-text {
-    margin-top: 100px;
-    padding-left: 60vw;
+.section-1-text:not(:first-child) {
+    margin-top: 140px;
+}
 
+.section-1-text {
+    padding-left: 60vw;
     background-image: linear-gradient(135deg, #E9D0A6 0%, #FDF2DF 48%, #E9D0A6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .section-1-text span {
     font-size: 20px;
@@ -584,7 +587,7 @@ section {
     z-index: 10000;
 }
 
-.section-1-overlay h1{
+.section-1-overlay h1 {
     z-index: 100000;
     position: absolute;
     left: 51.5%;
@@ -602,4 +605,15 @@ section {
     top: 48%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+}
+
+.section-wrapper {
+    z-index: 10002200;
+    position: absolute;
+    left: 7%;
+    top: 100%;
+}
+
+.section-1 {
+    position: relative;
 }
