@@ -42,6 +42,7 @@ html {
     min-height: 100vh;
     background: url("../assets/images/bg.png") no-repeat center center;
     background-position: top center;
+    font-family: 'SVN-Gotham';
 }
 
 .center-abs {
@@ -90,14 +91,14 @@ section {
 
 
 .section-1-text span {
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
 }
 
 .section-1-text h2 {
     margin-top: 10px;
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -146,21 +147,25 @@ section {
 }
 
 .section-3-title {
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 69px;
+    font-weight: 700;
     color: #1A94AE;
     opacity: 0;
+    letter-spacing: 4px;
+    line-height: 78px;
 }
 
 .section-3-decs {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 400;
     color: #1A94AE;
-    margin: 10px 0;
+    margin: 0px 0 25px;
 }
 
 .section-3-text {
     line-height: 22px;
+    font-family: 'SVN-Gotham XLight';
+    font-weight: 200;
 }
 
 .map {
@@ -222,12 +227,15 @@ section {
 
 .section-3-infor-number {
     font-size: 350px;
-    line-height: 230px;
+    line-height: 310px;
     color: #1A94AE;
+    font-weight: 600;
+    font-family: 'SVN-Gotham XLight';
 }
 
 .section-3-infor-content {
     color: #1A94AE;
+    padding-left: 30px;
 }
 
 .section-4-banner {
@@ -252,7 +260,7 @@ section {
 
 .section-4-title span {
     font-size: 25px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-left: 20px;
     font-weight: 500;
 }
@@ -260,7 +268,8 @@ section {
 .section-4-content {
     margin: 30px 0;
     padding-left: 40px;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'SVN-Gotham XLight';
 }
 
 .section-4-card img {
@@ -348,7 +357,7 @@ section {
 
 .section-5-card-decs {
     text-align: right;
-    font-size: 22px;
+    font-size: 20px;
     color: #16859D;
 }
 
@@ -357,10 +366,12 @@ section {
     font-size: 50px;
     color: #fff;
     text-align: right;
+    font-family: 'SVN-Gotham XLight';
 }
 
 .section-5-title {
     font-size: 90px;
+    font-weight: 600;
 }
 
 .section-5-swiper .swiper-pagination {
@@ -392,6 +403,8 @@ section {
     color: #16859D;
     text-transform: uppercase;
     letter-spacing: 10px;
+    font-family: 'SVN-Gotham XLight';
+    font-weight: 700;
 }
 
 .line {
@@ -421,6 +434,8 @@ section {
     height: 60px;
     position: relative;
     font-weight: 400;
+    font-family: 'SVN-Gotham XLight';
+    font-weight: 600;
 }
 
 .news-content-text {
@@ -517,7 +532,7 @@ section {
 
 .footer .arrow {
     position: absolute;
-    bottom: -13%;
+    bottom: -15%;
     left: 70%;
     z-index: 1000000;
     transform: translate(-50%, -60%);
@@ -529,7 +544,7 @@ section {
 
 .swiper-8-pagination {
     position: absolute;
-    bottom: -7%;
+    bottom: -10%;
     display: flex;
     justify-content: end;
     color: #16859D;
@@ -548,6 +563,8 @@ section {
 
 .member-title {
     text-align: center;
+    color: #484A4A;
+    font-family: 'SVN-Gotham XLight';
 }
 
 .member-logo {
@@ -562,6 +579,8 @@ section {
 
 .invest-title {
     padding-bottom: 20px;
+    color: #484A4A;
+    font-family: 'SVN-Gotham XLight';
 }
 
 .invest-list {
@@ -576,7 +595,7 @@ section {
 .footer-line {
     height: 2px;
     width: 300px;
-    background-color: #ddd;
+    background-color: #80ADBD;
     margin: 25px 0;
 }
 
@@ -591,16 +610,20 @@ section {
 
 .infor {
     color: #16859D;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .infor-name {
     color: #30B5BE;
-    font-size: 32px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'SVN-Gotham XLight';
+    font-weight: 800;
 }
 
 .infor-desc {
     margin-top: 5px;
+    font-family: 'SVN-Gotham XLight';
 }
 
 /* ANIMATIONS */
@@ -609,6 +632,7 @@ section {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    /* height: 100vh; */
 }
 
 .zoom-frame {
@@ -618,19 +642,20 @@ section {
 .section-1-overlay h1 {
     z-index: 100000;
     position: absolute;
-    left: 51.5%;
-    top: 45%;
-
-    font-size: 30px;
+    left: 52%;
+    top: 44%;
+    font-size: 35px;
     color: #25B2BA;
-    font-weight: 800;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'SVN-Gotham';
 }
 
 .section-1-square {
     z-index: 100000;
     position: absolute;
     left: 50%;
-    top: 48%;
+    top: 47%;
     transform: translate(-50%, -50%);
     background-color: #fff;
 }

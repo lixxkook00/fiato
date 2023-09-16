@@ -327,3 +327,167 @@ body.isLoading {
     width: 100vw;
     overflow: hidden;
 }
+
+/* FONTS */
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Book';
+    src: url('../assets/fonts/SVN-GothamBookItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-Gotham.woff2') format('woff2'),
+        url('../assets/fonts/SVN-Gotham.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamBlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamBold.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Book';
+    src: url('../assets/fonts/SVN-GothamBook.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamLight.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham XLight';
+    src: url('../assets/fonts/SVN-GothamXLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamXLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamBlack.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham XLight';
+    src: url('../assets/fonts/SVN-GothamXLight.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamXLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamThin.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamLight.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamThinItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Ultra';
+    src: url('../assets/fonts/SVN-GothamUltraItalic.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamUltraItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Ultra';
+    src: url('../assets/fonts/SVN-GothamUltra.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamUltra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../assets/fonts/SVN-GothamBold.woff2') format('woff2'),
+        url('../assets/fonts/SVN-GothamBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
