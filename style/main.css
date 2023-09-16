@@ -69,7 +69,7 @@ section {
 
 .section-1-bg img {
     transition: all 0.5s linear;
-    transform: translate(-50%, -50%) scale(1.02);
+    transform: translate(-50%, -50%) scale(1.2);
     height: 100vh;
 }
 
@@ -190,7 +190,7 @@ section {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 35%;
+    width: 40%;
     height: 40%;
     padding: 30px;
 
@@ -207,8 +207,9 @@ section {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 10px;
+    padding: 20px;
     color: #1A94AE;
+    z-index: 999999;
 }
 
 .section-3-infor-arrow img {
@@ -223,11 +224,27 @@ section {
     display: flex;
     align-items: end;
     height: 100%;
+    position: relative;
+}
+
+.section-3-infor-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s ease-in;
+    background-image: linear-gradient(135deg, #ddd4c5 0%, #E9D1A5 48%, #ddd4c5 100%);
+}
+
+.section-3 .swiper-slide-active .section-3-infor-wrapper::after {
+    height: 0%;
 }
 
 .section-3-infor-number {
-    font-size: 350px;
-    line-height: 310px;
+    font-size: 300px;
+    /* line-height: 320px; */
     color: #1A94AE;
     font-weight: 600;
     font-family: 'SVN-Gotham XLight';
@@ -236,6 +253,7 @@ section {
 .section-3-infor-content {
     color: #1A94AE;
     padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .section-4-banner {
@@ -499,7 +517,7 @@ section {
 
 .section-6 .arrow {
     position: absolute;
-    bottom: 2%;
+    bottom: -1%;
     left: 50%;
     z-index: 1000000;
     transform: translate(-50%, -60%);
@@ -547,7 +565,7 @@ section {
 }
 
 .footer-form {
-    width: 50%;
+    width: 70%;
     transform: translateY(-25%);
 }
 

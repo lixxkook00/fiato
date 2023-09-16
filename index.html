@@ -125,7 +125,7 @@
     <!-- SCREEN 3 -->
     <section id="section-3" class="section-3 centering">
         <div class="container">
-            <div class="grid grid-3-2">
+            <div class="grid grid-3-2 grid-m-1">
                 <div class="map ani wow animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
                     <div class="stick op-0 ani wow animate__bounceIn" data-wow-duration="0.5s" data-wow-delay="1s">
                         <img src="./assets/images/stick.png" alt="">
@@ -157,21 +157,38 @@
             </div>
         </div>
 
-        <div class="section-3-infor">
+        <div class="section-3-infor centering">
+            <div class="swiper section-3-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="section-3-infor-wrapper">
+                            <div class="section-3-infor-number">
+                                2
+                            </div>
+                            <div class="section-3-infor-content">
+                                đến Bệnh viện Thủ Đức, Chợ Tam Hà
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-3-infor-wrapper">
+                            <div class="section-3-infor-number">
+                                3
+                            </div>
+                            <div class="section-3-infor-content">
+                                đến Bệnh viện Thủ Đức, Chợ Tam Hà
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="section-3-infor-arrow">
                 <div class="section-3-infor-arrow-left">
                     <img src="./assets/images/arrow-left.png" alt="">
                 </div>
                 <div class="section-3-infor-arrow-right">
                     <img src="./assets/images/arrow-right.png" alt="">
-                </div>
-            </div>
-            <div class="section-3-infor-wrapper">
-                <div class="section-3-infor-number">
-                    2
-                </div>
-                <div class="section-3-infor-content">
-                    đến Bệnh viện Thủ Đức, Chợ Tam Hà
                 </div>
             </div>
         </div>
@@ -230,7 +247,8 @@
 
     <!-- SCREEN 5 -->
     <section id="section-5" class="section-5">
-        <div class="grid grid-2 gird-m-1 gap-0">
+        <div class="grid grid-2 grid-m-1 gap-0">
+            <!-- building -->
             <div class="section-5-city op-0 ani wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
 
                 <div class="section-5-building section-5-building--1">
@@ -255,9 +273,10 @@
 
                 <img src="./assets/images/section_5_bg.png" alt="">
             </div>
+
+            <!-- carousel -->
             <div class="section-5-carousel op-0 ani wow animate__fadeInRight" data-wow-duration="1s"
                 data-wow-delay="0.2s">
-                <!-- carousel -->
                 <div class="swiper section-5-swiper">
                     <div class="swiper-wrapper">
 
@@ -547,54 +566,56 @@
 
     <!-- FOOTER -->
     <div class="footer">
-        <div class="centering">
-            <div class="footer-form">
-                <div class="grid grid-2-1 gap-0">
-                    <div class="footer-form-img">
-                        <div class="swiper section-8-swiper w-100">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="section-8-swiper-img">
-                                        <img src="./assets/images/footer-banner.png" alt="" class="img-max">
-                                    </div>
-                                </div>
 
-                                <div class="swiper-slide">
-                                    <div class="section-8-swiper-img">
-                                        <img src="./assets/images/footer-banner.png" alt="" class="img-max">
+        <div class="container">
+            <!-- form -->
+            <div class="centering">
+                <div class="footer-form">
+                    <div class="grid grid-2-1 gap-0">
+                        <div class="footer-form-img">
+                            <div class="swiper section-8-swiper w-100">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="section-8-swiper-img">
+                                            <img src="./assets/images/footer-banner.png" alt="" class="img-max">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="swiper-slide">
-                                    <div class="section-8-swiper-img">
-                                        <img src="./assets/images/footer-banner.png" alt="" class="img-max">
+                                    <div class="swiper-slide">
+                                        <div class="section-8-swiper-img">
+                                            <img src="./assets/images/footer-banner.png" alt="" class="img-max">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="section-8-swiper-img">
+                                            <img src="./assets/images/footer-banner.png" alt="" class="img-max">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- arrow -->
+                            <div class="arrow d-flex">
+                                <div class="section-8-arrow-left">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+
+                                <div class="section-8-arrow-right ml-3">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="swiper-8-pagination"></div>
                         </div>
 
-                        <!-- arrow -->
-                        <div class="arrow d-flex">
-                            <div class="section-8-arrow-left">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </div>
-
-                            <div class="section-8-arrow-right ml-3">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
+                        <div class="footer-form-button centering" data-bs-toggle="modal" data-bs-target="#contactForm">
+                            <img class="img-max" src="./assets/images/footer-button.png" alt="">
                         </div>
-
-                        <div class="swiper-8-pagination"></div>
-                    </div>
-
-                    <div class="footer-form-button centering" data-bs-toggle="modal" data-bs-target="#contactForm">
-                        <img class="img-max" src="./assets/images/footer-button.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
             <!-- members -->
             <div class="members">
                 <div class="centering">

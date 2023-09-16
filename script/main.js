@@ -7,7 +7,6 @@ window.addEventListener('load', (event) => {
     bind1('body').classList.remove('isLoading')
 });
 
-
 // SWIPER
 var swiper4 = new Swiper(".section-4-swiper", {
     // slidesPerView: 1,
@@ -77,6 +76,7 @@ var swiper7 = new Swiper(".section-7-swiper", {
         nextEl: ".section-7-next",
         prevEl: ".section-7-arrow-left",
     },
+    loop: true,
 });
 
 var swiper8 = new Swiper(".section-8-swiper", {
@@ -93,8 +93,23 @@ var swiper8 = new Swiper(".section-8-swiper", {
     },
 });
 
-// SECTION 5
+// SECTION 3
+var swiper3 = new Swiper(".section-3-swiper", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".section-3-infor-arrow-right",
+        prevEl: ".section-3-infor-arrow-left",
+    },
+});
 
+// SECTION 5
 var swiper5 = new Swiper(".section-5-swiper", {
     slidesPerView: 1,
     centeredSlides: true,

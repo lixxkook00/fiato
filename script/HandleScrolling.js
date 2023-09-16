@@ -37,6 +37,14 @@ const handleScrollingSection_1 = () => {
             '0'
         )
         .to(
+            ".section-1-bg img", 1, { 
+                scale: 1,
+                xPercent: 0, 
+                yPercent: 0, 
+            },
+            '0'
+        )
+        .to(
             ".zoom-frame", 2, { 
                 scale: 50, 
                 xPercent: 3, 
