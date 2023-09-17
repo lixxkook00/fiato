@@ -212,7 +212,9 @@
         width: 80vw;
     }
 
-    .section-2-text,
+    .section-2-text {
+        width: 100%;
+    }
     .section-2-title {
         width: 70%;
     }

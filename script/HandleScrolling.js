@@ -102,19 +102,18 @@ const handleScrollingSection_2 = () => {
         )
         .to(
             ".section-2-title", 0.4, { 
-                yPercent: -100,
-                opacity: 0, 
-                display: 'none'
-            },
-            '1'
-        )
-        .to(
-            ".section-2-text", 0.8, { 
                 yPercent: -55,
-                opacity: 1,
+                opacity: 0.98, 
             },
             '1'
         )
+        // .to(
+        //     ".section-2-text", 0.8, { 
+        //         yPercent: -55,
+        //         opacity: 1,
+        //     },
+        //     '1'
+        // )
 
     new ScrollMagic.Scene(
             {

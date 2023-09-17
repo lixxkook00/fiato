@@ -116,7 +116,7 @@ section {
     width: 100%;
 }
 
-.section-2-text,
+/* .section-2-text, */
 .section-2-title {
     opacity: 0;
     position: absolute;
@@ -124,6 +124,9 @@ section {
     top: 5%;
     width: 20vw;
     transform: translate(-50%, 50%);
+
+    overflow-y: scroll;
+    height: 350px;
 }
 
 .section-2-title {
@@ -137,6 +140,7 @@ section {
 .section-2-text {
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 .section-3 {
@@ -871,7 +875,7 @@ section {
 
 .section-2-text-bottom {
     color: #fff;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 14px;
     line-height: 18px;
 }
