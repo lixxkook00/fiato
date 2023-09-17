@@ -295,7 +295,8 @@ section {
     margin: 30px 0px;
     padding-left: 40px;
     font-size: 17px;
-    font-family: "SVN-Gotham XLight";
+    font-family: "SVN-Gotham";
+    font-weight: 300;
 }
 
 .section-4-card img {
@@ -501,8 +502,8 @@ section {
 .news-content {
     height: 60px;
     position: relative;
-    font-family: "SVN-Gotham XLight";
-    font-weight: 600;
+    font-family: "SVN-Gotham";
+    font-weight: 300;
 }
 
 .news-content-text {
@@ -584,6 +585,7 @@ section {
 
 .footer {
     background: url("../assets/images/footer-bg.png") center top no-repeat;
+    background-color: #f5e1c1d4;
 }
 
 .footer-form {
@@ -637,7 +639,7 @@ section {
 .member-title {
     text-align: center;
     color: rgb(72, 74, 74);
-    font-family: "SVN-Gotham XLight";
+    font-family: "SVN-Gotham Book";
 }
 
 .member-logo {
@@ -653,7 +655,7 @@ section {
 .invest-title {
     padding-bottom: 20px;
     color: rgb(72, 74, 74);
-    font-family: "SVN-Gotham XLight";
+    font-family: "SVN-Gotham Book";
 }
 
 .invest-list {
@@ -682,21 +684,24 @@ section {
 }
 
 .infor {
-    color: rgb(22, 133, 157);
+    color: rgb(4 63 76);
     padding-bottom: 100px;
+    font-family: "SVN-Gotham Book";
+    font-weight: 500;
 }
 
 .infor-name {
     color: rgb(48, 181, 190);
     font-size: 30px;
     margin-bottom: 20px;
-    font-family: "SVN-Gotham XLight";
+    font-family: "SVN-Gotham Book";
     font-weight: 800;
 }
 
 .infor-desc {
     margin-top: 5px;
-    font-family: "SVN-Gotham XLight";
+    /* font-family: "SVN-Gotham XLight"; */
+    font-family: "SVN-Gotham Book";
 }
 
 .section-1-overlay {
