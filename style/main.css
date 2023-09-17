@@ -691,7 +691,7 @@ section {
 }
 
 .infor-name {
-    color: rgb(48, 181, 190);
+    color: #30b5be;
     font-size: 30px;
     margin-bottom: 20px;
     font-family: "SVN-Gotham Book";
@@ -702,6 +702,7 @@ section {
     margin-top: 5px;
     /* font-family: "SVN-Gotham XLight"; */
     font-family: "SVN-Gotham Book";
+    color: #16859d;
 }
 
 .section-1-overlay {
